@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".ui.AddWord">
+
+    <ImageView
+        android:id="@+id/wordImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="TODO"
+        android:onClick="selectImage"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="239dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/wordEnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="İngilizce Kelime Giriniz: "
+            android:imeOptions="actionNext"
+            android:padding="12sp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/wordTrEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Türkçe Kelime Giriniz: "
+            android:imeOptions="actionNext"
+            android:padding="12sp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/sentenceEnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="İngilizce Cümle Giriniz: "
+            android:imeOptions="actionNext"
+            android:padding="12sp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/sentenceTrEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Türkçe Cümle Giriniz: "
+            android:imeOptions="actionNext"
+            android:padding="12sp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="save"
+        android:padding="12sp"
+        android:background="#1028AD"
+        android:text="Kaydet" />
+
+</LinearLayout>
